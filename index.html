@@ -11,6 +11,27 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/afdcc657db.js" crossorigin="anonymous"></script>
+    <script>
+       var push = true;
+     function changeI(){
+           var element = document.getElementById("hamburger");
+
+           
+
+
+           if(push==true){
+            element.classList.remove("fas","fa-bars");
+           element.classList.add("fas","fa-times");
+           push=false;
+           }else{
+               element.classList.remove("fas","fa-times");
+               element.classList.add("fas","fa-bars");
+               push=true;
+           }
+           
+        }
+
+    </script>
 </head>
 
 <body>
@@ -18,8 +39,9 @@
         <a class="navbar-brand" href="#">MNXGYM</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-times"></i></span>
+            <span class="navbar-toggler-icon"><i onclick="changeI()" id="hamburger" class="fas fa-bars"></i></span>
         </button>
+        <!-- <i class="fas fa-times"></i> -->
         <div class="collapse  navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
                 <a class="nav-item navbar-text nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -33,12 +55,12 @@
     <section id="main">
         <div class="main">
             <div>
-                <img src="images/img1.jpg" class="responsive" width="100%" height="700px">
+                <img src="images/img1.jpg"  class="responsive" width="100%" height="700px">
 
                 <div class="top-left ">
                     <h4 style="color: red; text-shadow: 0 0 30px black;">GYM & FITNESS</h4>
                     <h1>Setup your fitness challenge with us</h1>
-                    <h3><button class="btn btn-lg btn-outline-light">join us</button></h3>
+                    <h3><button class="btn btn-lg btn-outline-danger">join us</button></h3>
                 </div>
 
             </div>
@@ -60,7 +82,7 @@
                                 eum
                                 accusamus, earum facilis exercitationem atque.</p>
 
-                            <a href="#">- MORE DETAILS</a>
+                            <a href="#" style="text-decoration: none;">- MORE DETAILS</a>
 
                         </div>
                     </div>
@@ -139,7 +161,7 @@
                     <i class="far fa-calendar-alt color-red"></i>
                     <div class="features-inner">
                         <h2>Progression</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +170,7 @@
                     <i class="fas fa-dumbbell color-black"></i>
                     <div class="features-inner">
                         <h2>Work</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -157,7 +179,7 @@
                     <i class="fab fa-nutritionix color-red"></i>
                     <div class="features-inner">
                         <h2>Nutrition</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -236,16 +258,16 @@
         </div>
 
         <div class="centered">
-            
-                <h1>Subscrib Our Newsletter</h1>
-                <p style="text-align: center;">Subscrib and get Our latest articals in your inbox</p>
-    
-                <form class="example"  style="margin:auto;min-width:300px">
-                    <input type="text" placeholder="Enter Email..." name="search2">
-                    <button type="submit">Subscribe</button>
-                </form>
-        
-            
+
+            <h1 style="text-align: center;">Subscribe Our Newsletter</h1>
+            <p style="text-align: center;">Subscribe and get Our latest articals in your inbox</p>
+
+            <form class="example" style="margin:auto;min-width:300px">
+                <input type="text" placeholder="Enter Email..." name="search2">
+                <button type="submit">Subscribe</button>
+            </form>
+
+
         </div>
     </div>
 
@@ -253,6 +275,62 @@
     <footer>
         <div class="back">
 
+            <div class="container">
+                <div class="row foot-box">
+                    <div class="col-lg-3">
+                        <h4 class="color-head">Get In Touch</h4>
+                        <div class="color-para">
+                            <p><i class="fas fa-map-marker-alt"></i> 123 abc, New York,USA</p>
+                            <p><i class="fas fa-phone-alt"></i> +012 3456789</p>
+                            <p><i class="fas fa-envelope"></i> info@example.com</p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="color-head">Quik Links</h4>
+                        <div class="color-para">
+                            <p>><a href="#" class="color-para"> Home</a></p>
+                            <p>><a href="#" class="color-para"> About Us</a></p>
+                            <p>><a href="#" class="color-para"> Our Features</a></p>
+                            <p>><a href="#" class="color-para"> Classes</a></p>
+                            <p>><a href="#" class="color-para"> Contact Us</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="color-head">Popular Links</h4>
+                        <div class="color-para">
+                            <p>><a href="#" class="color-para"> Home</a></p>
+                            <p>><a href="#" class="color-para"> About Us</a></p>
+                            <p>><a href="#" class="color-para"> Our Features</a></p>
+                            <p>><a href="#" class="color-para"> Classes</a></p>
+                            <p>><a href="#" class="color-para"> Contact Us</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="color-head">Opening Hours</h4>
+                        <div class="color-para">
+                            <h5>Monday-Friday</h5>
+                            <p>8.00 AM - 8.00 PM</p>
+                            <h5>Saturday - Sunday</h5>
+                            <p>11.00 AM - 8.00 PM</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div>
+
+                    <hr style="border: 1px solid red;">
+
+                    <p class="color-para" style="padding: 20px;
+                    text-align: center;
+                    margin-bottom: 0;">Copyright &copy; 2021-2022 - mnxgym & design by mnxspace.com</p>
+                </div>
+
+            </div>
         </div>
     </footer>
 
